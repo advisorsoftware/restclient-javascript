@@ -1,0 +1,11 @@
+	var url = "https://sandbox.advisorsoftware.com:443/v1/goal_solver/lump_sum";
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("POST", url, true);
+	var formData = "{\r\n\t\"accountValue\": \"5000\",\r\n\t\"accountReturn\": \"6\",\r\n\t\"goals\": [{\r\n\t\t\"goalName\": \"Rainy Day Fund\",\r\n\t\t\"goalAmount\": \"25000\",\r\n\t\t\"timeHorizon\": \"5\"\r\n\t}]\r\n}";
+	xmlhttp.setRequestHeader("Content-Type", "application/json");
+	xmlhttp.setRequestHeader("Accept", "application/json");
+	xmlhttp.setRequestHeader("Authorization", "ASI_CLIENT client_id=xxxxx client_secret=xxxxxxxxxxxxxxxxxxx");
+	xmlhttp.send(formData);
+	xmlhttp.send();
+	console.log(xmlhttp.status);
+	console.log(xmlhttp.statusText);

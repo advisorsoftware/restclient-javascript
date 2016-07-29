@@ -1,5 +1,3 @@
-
-function submit() {
 	var url = "https://sandbox.advisorsoftware.com:443/v1/mcs";
 	var xmlhttp = new XMLHttpRequest();
 	xmlhttp.open("POST", url, true);
@@ -12,8 +10,5 @@ function submit() {
 	xmlhttp.setRequestHeader("Authorization", "ASI_CLIENT client_id=xxxxx client_secret=xxxxxxxxxxxxxxxxxxx");
 	xmlhttp.send(formData);
 	xmlhttp.send();
-
 	console.log(xmlhttp.status);
 	console.log(xmlhttp.statusText);
-	
-}

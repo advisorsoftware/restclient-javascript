@@ -1,0 +1,11 @@
+	var url = "https://sandbox.advisorsoftware.com:443/v1/progress_to_goal";
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("POST", url, true);
+	var formData = "{ \"accountValue\": 10000, \"accountReturn\": 0.06, \"goals\": [ { \"goalName\": \"Savings\", \"goalAmount\": 1000000, \"timeHorizon\": 20, \"contributionAmount\": 1000, \"contributionFrequency\": \"Annual\", \"contributionStartYear\": 2016, \"contributionEndYear\": 2025 } ]}";
+	xmlhttp.setRequestHeader("Content-Type", "application/json");
+	xmlhttp.setRequestHeader("Accept", "application/json");
+	xmlhttp.setRequestHeader("Authorization", "ASI_CLIENT client_id=xxxxx client_secret=xxxxxxxxxxxxxxxxxxx");
+	xmlhttp.send(formData);
+	xmlhttp.send();
+	console.log(xmlhttp.status);
+	console.log(xmlhttp.statusText);
