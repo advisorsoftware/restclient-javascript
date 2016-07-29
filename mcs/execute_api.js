@@ -9,7 +9,7 @@ function submit() {
 	
 	xmlhttp.setRequestHeader("Content-Type", "application/json");
 	xmlhttp.setRequestHeader("Accept", "application/json");
-	xmlhttp.setRequestHeader("Authorization", "ASI_CLIENT client_id=bfee7e17 client_secret=c24df3edd308a7a40b4cae0a306a55d4");
+	xmlhttp.setRequestHeader("Authorization", "ASI_CLIENT client_id=xxxxx client_secret=xxxxxxxxxxxxxxxxxxx");
 	xmlhttp.send(formData);
 	xmlhttp.send();
 
